@@ -1,0 +1,73 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #080d18;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+
+#webcam {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  object-fit: cover;
+  transform: scaleX(-1);
+  z-index: 0;
+  background: #222;
+}
+
+
+#scene {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+#scene canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+  z-index: 3;
+  padding: 16px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.info h1 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.info p {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+#start-camera {
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 8px;
+  background: #4f8cff;
+  color: white;
+  cursor: pointer;
+}
